@@ -1,0 +1,29 @@
+Newton's Method, also known as the Newton-Raphson method, is an iterative numerical technique for finding the roots of a real-valued function. The basic idea is to start with an initial guess for a root of the function and then refine that guess by using the derivative of the function.
+
+Here are the key steps of Newton's Method:
+
+1. **Select an Initial Guess:**
+   Choose an initial guess \( x_0 \) close to the root you want to find. The method is sensitive to the choice of the initial guess, and a good initial guess is often crucial for convergence.
+
+2. **Formulate the Iterative Rule:**
+   The iterative rule for Newton's Method is given by:
+   \[ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \]
+   where:
+   - \( x_{n+1} \) is the next approximation of the root.
+   - \( x_n \) is the current approximation.
+   - \( f(x_n) \) is the function value at \( x_n \).
+   - \( f'(x_n) \) is the derivative of the function at \( x_n \).
+
+3. **Iterate:**
+   Repeat the iterative rule to generate a sequence of approximations:
+   \[ x_1, x_2, x_3, \ldots, x_n, \ldots \]
+
+4. **Convergence Check:**
+   Continue iterating until one of the convergence criteria is met. Common criteria include reaching a certain number of iterations or achieving a small enough tolerance (i.e., \( |f(x_n)| < \text{Tolerance} \)).
+
+5. **Root Found:**
+   The final \( x_n \) is an approximation of the root of the function.
+
+Newton's Method is effective when the initial guess is close to the actual root, and the function behaves well in the vicinity of the root. However, it may fail to converge or converge to a different root if the initial guess is not chosen carefully or if the function has certain characteristics (e.g., multiple roots, singularities, oscillations).
+
+Despite its limitations, Newton's Method is widely used for its fast convergence when it works and its applicability to a wide range of functions.
